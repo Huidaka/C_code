@@ -2,28 +2,19 @@
 int main()
 {
 	int i, j;
-	//int k = 0;
-	printf("100到200之间的素数：");
-	for (i = 3; i <= 20; i++) {
+	printf("100到200之间的素数：\n");
+	for (i = 100; i <= 200; i++) {
 		for (j = 2; j < i; j++) 
 		{
-			if (i % j != 0)
-			{
-
-				printf("%d ", i);
-				break;
-			}
-			if (i%j == 0) 
+			if (i % j == 0)
 			{
 				break;
 			}
 		}
-		//if (k == 0)
-		//{
-
-		//}
-		
-		//k = 0;
+		if (i == j)
+		{
+			printf("%d\n", i);
+		}
 	}
 	return 0;
 }
