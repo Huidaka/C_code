@@ -1,49 +1,49 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-//int main() {
-//	int a, b,c;
-//	int i;
-//	printf("请输入两个数\n");
-//	scanf("%d%d", &a, &b);
-//	if (a > b)
-//		c = b;
-//	else if (a < b)
-//		c = a;
-//	else
-//		printf("%d\n", a);
-//	for (i = c; i >= 1; i--) {
-//		if (a % i == 0 && b % i == 0)
-//			break;
-//	}
-//	printf("%d", i);
-//	return 0;
-//}
-int main() {
-	int a, b,c;
-	int i;
-	printf("请输入两个数\n");
-	scanf("%d%d", &a, &b);
-	if (a > b) {
-		c = a % b;
-		if (a % b == 0) {
-			printf("%d\n", b);
-		}
+int main()
+{
+	int tmp = 0;
+	int a = 18;
+	int b = 24;
+
+	while (tmp = a % b)
+	{
+		a = b;
+		b = tmp;
 	}
-	else if(a < b){
-		c = b % a;
-		if (b % a == 0) {
-			printf("%d\n", a);
-		}
-	}
-	else if(a == b){
-		printf("%d", a);
-		return 0;
-	}
-	for (i = c; i > 1; i--) {
-		if (a % i == 0 && b % i == 0) {
-			printf("%d\n", i);
-			break;
-		}
-	}
-	return 0;
+	printf("%d\n", b);
 }
+//int main()
+//{
+//	int a = 30;
+//	int b = 24;
+//	int x;
+//	do 
+//	{
+//		if (a > b)
+//		{
+//			x = a % b;
+//			if (x == 0)
+//			{
+//				printf("%d", b);
+//				return 0;
+//			}
+//			a = b;
+//			b = x;
+//		}
+//		else
+//		{
+//			x = b % a;
+//			if (x == 0)
+//			{
+//				printf("%d", a);
+//				return 0;
+//			}
+//			b  = a;
+//			a = x;
+//		}
+//	} while (x != 0);
+//	
+//	return 0;
+//
+//}
