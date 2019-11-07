@@ -1,21 +1,46 @@
 //求10个数的最大值
-#define  _CRT_SECURE_NO_WARNINGS
+#define  _CRT_SECURE_NO_WARNINGS 
 #include<stdio.h>
- int main() {
+// int main() {
+//	int arr[10];
+//	int tmp = 0;
+//	int i, j;
+//	printf("请输入10个数\n");
+//	for (i = 0; i < 10; i++) {
+//			scanf("%d",& arr[i]);
+//	}
+//	for (j = 0; j <= 9; j++) {
+//		if (tmp < arr[j]) {
+//			tmp = arr[j];
+//	    }
+//	}
+//	printf("%d", tmp);
+//	return 0;
+int main()
+{
 	int arr[10];
-	int c;
-	int i, j;
-	printf("请输入10个数\n");
-	for (i = 0; i < 10; i++) {
-			scanf("%d",& arr[i]);
+	int i;
+	int j;
+	int tmp;
+	for (i = 0; i <= 9; i++)
+	{
+		scanf("%d", &arr[i]);
 	}
-	for (j = 1; j <= 9; j++) {
-		if (arr[0] < arr[j]) {
-			c = arr[j];
-			arr[j] = arr[0];
-			arr[0] = c;
-	    }
+	for(i=0; i<10; i++)
+	{
+		for (j = 0; j < 10-i-1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
+		}
 	}
-	printf("%d", arr[0]);
+	for (i = 0; i <= 9; i++)
+	{
+		printf("%d ", arr[i]);
+	}
 	return 0;
 }
