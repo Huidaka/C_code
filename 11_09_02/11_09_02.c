@@ -24,7 +24,7 @@ int mystrlen(char* str)
 	{
 		return 0;
 	}
-	return 1+ mystrlen(++str);
+	return 1 + mystrlen(++str);
 }
 int main()
 {
