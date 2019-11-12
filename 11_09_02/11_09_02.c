@@ -9,7 +9,7 @@ int mystrlen(const char* str)
 	{
 
 	 }
-	return str - p-1;
+	return  str-p-1;
 }
 int main()
 {
