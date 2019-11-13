@@ -11,6 +11,10 @@ int judge_huiwen(char* str)
 	{
 		count++;
 	}
+	if (count == 0)
+	{
+		return 0;
+	}
 	for (i = 0; i < count/2; i++)
 	{
 		if (flage[i] != flage[count- i-1])
@@ -25,7 +29,7 @@ int judge_huiwen(char* str)
 }
 int main()
 {
-	char arr[] = "";
+	char arr[] = "a";
 	printf("%d",judge_huiwen(arr));
 	return 0;
 }

@@ -1,3 +1,3 @@
 ﻿  11_13_01.c
-F:\Mygithup\C_code\11_13_01\11_13_01.c(25): warning C4715: “judge_huiwen”: 不是所有的控件路径都返回值
+F:\Mygithup\C_code\11_13_01\11_13_01.c(29): warning C4715: “judge_huiwen”: 不是所有的控件路径都返回值
   11_13_01.vcxproj -> F:\Mygithup\C_code\11_13_01\Debug\11_13_01.exe
